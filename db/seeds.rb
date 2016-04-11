@@ -13,7 +13,7 @@ Tutor.create( {name: "Wouter de Vos", gpa: "8.3", subject: "Programming", postal
 
 Tutor.create( {name: "Robert Boemke", gpa: "3.8", subject: "English", postal_code: "1012 LB", email: "r.boemke@gmail.com", phone_number: "043 - 388 52 82", images: "http://www.odilederousiers.fr/charles/dl/profile.png", description:"I am currently doing my masters in English Literature at the University of Amsterdam. I completed my undergraduate degree at Columbia University in Psychology and Gender Studies.", social_links: "https://www.linkedin.com/in/robert", price: "20" })
 
-Tutor.create( {name: "Edward Sharpe", gpa: "4.0", subject: "Computer Science", postal_code: "1012 LB", email: "e.sharpe@gmail.com", phone_number: "043 - 366 52 87", images: "https://avatars1.githubusercontent.com/u/80280?v=3&s=460", description:"I have a Bachelor's Degree in Math and Computer Science from McGill University in Montreal. I am currently doing a Master's in Computer Science at the University of Amsterdam.", social_links: "https://www.linkedin.com/in/robert", price: "25" })
+Tutor.create( {name: "Edward Sharpe", gpa: "4.0", subject: "Computer Science", postal_code: "1012 LB", email: "e.sharpe@gmail.com", phone_number: "043 - 366 52 87", images: "edward_sharpe.jpg", description:"I have a Bachelor's Degree in Math and Computer Science from McGill University in Montreal. I am currently doing a Master's in Computer Science at the University of Amsterdam.", social_links: "https://www.linkedin.com/in/robert", price: "25" })
 
 Tutor.create( {name: "Brian Lens",
 gpa: "8.0",
@@ -21,7 +21,7 @@ subject: "Mathematics",
 postal_code: "1092VC",
 email: "brian@stutor.nl",
 phone_number: "+31 6 46396642",
-images: "https://media.licdn.com/media/p/5/005/0a0/1aa/0df94d2.jpg",
+images: "brian_lens.jpg",
 description:"Hi, I'm Brian and I was very proficient in Maths during secondary school. I'm looking for students who have a hard time with calculus, integrals and de-linear malfunctiation",
 social_links: "https://nl.linkedin.com/in/brian-lens-70887750",
 price: "27.5" })
