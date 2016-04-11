@@ -8,9 +8,6 @@
       <th>Name</th>
       <th>Gpa</th>
       <th>Subject</th>
-      <th>Postal code</th>
-      <th>Email</th>
-      <th>Phone number</th>
       <th>Images</th>
       <th>Description</th>
       <th>Social links</th>
@@ -25,10 +22,7 @@
         <td><%= tutor.name %></td>
         <td><%= tutor.gpa %></td>
         <td><%= tutor.subject %></td>
-        <td><%= tutor.postal_code %></td>
-        <td><%= tutor.email %></td>
-        <td><%= tutor.phone_number %></td>
-        <td><%= tutor.images %></td>
+        <td><%= link_to image_tag(tutor.images), :class => "style_image" %>%></td>
         <td><%= tutor.description %></td>
         <td><%= tutor.social_links %></td>
         <td><%= tutor.price %></td>
