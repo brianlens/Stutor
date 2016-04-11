@@ -16,7 +16,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :gpa %><br>
+    <%= f.label :gpa, "GPA" %><br>
     <%= f.text_field :gpa %>
   </div>
   <div class="field">
@@ -24,15 +24,15 @@
     <%= f.text_field :subject %>
   </div>
   <div class="field">
-    <%= f.label :postal_code %><br>
+    <%= f.label :postal_code, "Postal Code" %><br>
     <%= f.text_field :postal_code %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label :email, "E-mail Address" %><br>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :phone_number %><br>
+    <%= f.label :phone_number, "Phone Number" %><br>
     <%= f.text_field :phone_number %>
   </div>
   <div class="field">
@@ -40,18 +40,18 @@
     <%= f.text_area :images %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label :description, "Tell us about yourself" %><br>
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :social_links %><br>
+    <%= f.label :social_links, "Linkedin Profile url" %><br>
     <%= f.text_field :social_links %>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
+    <%= f.label :price, "Hourly Rate (eg. 20)" %><br>
     <%= f.text_field :price %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Account"%>
   </div>
 <% end %>
