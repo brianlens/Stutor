@@ -12,19 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :firs_name %><br>
+    <%= f.label :firs_name, "First Name" %><br>
     <%= f.text_field :firs_name %>
   </div>
   <div class="field">
-    <%= f.label :last_name %><br>
+    <%= f.label :last_name, "Last Name" %><br>
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :username %><br>
+    <%= f.label :username, "Select a username"%><br>
     <%= f.text_field :username %>
   </div>
   <div class="field">
-    <%= f.label :password %><br>
+    <%= f.label :password, "Select a password" %><br>
     <%= f.text_field :password %>
   </div>
   <div class="field">
@@ -32,14 +32,14 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :phone %><br>
+    <%= f.label :phone, "Phone Number" %><br>
     <%= f.text_field :phone %>
   </div>
   <div class="field">
-    <%= f.label :city %><br>
+    <%= f.label :city, "City" %><br>
     <%= f.text_field :city %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Account"%>
   </div>
 <% end %>
