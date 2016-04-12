@@ -128,8 +128,6 @@ Tutor.create( {name: "Willem-Alexander van Buuren",
 })
 
 #USERS
-
-
 User.create( {first_name:"Willem-Alexander", last_name:"van Buuren", username:"prinspils", password:"bierislekker", email:"renee.v.leijen@gmail.com", phone:"0617612365", city:"Amsterdam"} )
 User.create( {first_name:"Mark", last_name:"Rutte", username:"minpres1", password:"ikplasterk", email:"markrutte@primeminister.nl", phone:"0612345789", city:"The Hague"} )
 User.create( {first_name:"Bas", last_name:"Joosten", username:"bas_joosten", password:"bigmonnie14", email:"bas.joosten@bcg.nl", phone:"+31 6 57878241", city:"Amsterdam"} )
