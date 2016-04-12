@@ -16,3 +16,22 @@ header {
  font-family: "Brandon Grotesque", sans-serif;
  flex: 1;
 }
+
+footer {
+  height: 75px;
+  background: ##1C5D6F;
+  display:inline-flex;;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.footertext {
+ color:white;
+ background: #1C5D6F;
+ display: inline-block;;
+ font-size:50px;
+ font-family: "Brandon Grotesque", sans-serif;
+ flex: 1;
+}
