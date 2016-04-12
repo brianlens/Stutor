@@ -1,5 +1,5 @@
 header {
-   height: 250px;
+   height: 150px;
    background: #e63d02;
    display:inline-flex;;
    justify-content: center;
@@ -12,8 +12,7 @@ header {
  color:white;
  background: #e63d02;
  display: inline-block;;
- font-size:70px;
+ font-size:50px;
  font-family: "Brandon Grotesque", sans-serif;
  flex: 1;
- margin-left: 50px
 }
