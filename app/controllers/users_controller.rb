@@ -5,11 +5,9 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     if params[:search]
-      user = User.find_by_city(params[:search])
-      if user.present?
-        @users = [user]
-      else
-        @users = Users.all.order('created_at DESC')
+      @users = User.where(city: params[:search])
+      unless @users.count > 0
+        @users = User.all.order('created_at DESC')
       end
     else
       @users = User.all.order('created_at DESC')
