@@ -10,3 +10,17 @@ User.create( {firs_name:"Brian", last_name:"Lens", username:"Brian_the_lion", pa
 User.create( {firs_name:"Jeff",last_name: "Green", username:"Jgreen", password:"Jeff1",  email:"Jeff_Green@veryhotmail.com", phone: "0620984649",city:"Amsterdam"} )
 User.create( {firs_name:"Barack ",last_name:"Obama", username:"PresidentUSA", password:"Barack1",  email: "Baraka_Waka_Flame@dopehood.com ", phone:"0620984649",city:"Amsterdam"})
 User.create( {firs_name:" Wouter",last_name:"de Vos", username:"foxycoder", password:"wdevos1",  email: " foxy_coder@bootcamp.com ", phone: "0691129112",city:"Amsterdam" })
+
+
+tutor_subjects = {}
+
+tutor_subjects["Jgreen"] = ["Math"]
+
+
+tutor_subjects.each do | user_name, subjects |
+  user = User.find_by( username: user_name )
+
+  subjects.each do |subject|
+    Subject.create( subject:subject, user_id: user.id)
+  end
+end

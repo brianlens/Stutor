@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  get 'subjects/index'
+
+  get 'subjects/show'
+
   resources :reservations
   resources :users
-  resources :tutors
+  resources :subjects
 
   get 'welcome/index'
 
