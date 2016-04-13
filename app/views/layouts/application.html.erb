@@ -10,26 +10,27 @@
 
 
   <header>
-    <a class="logo" href="/welcome/index"><%=image_tag("logo1.png")%></a>
-    <h1>
-      <a class="headercontent" href="/welcome/index"> Home </a>
-      <a href="/users"> All Stutors </a>
+    <div class="logo"><a href="/welcome/index"><%=image_tag("logo1.png")%></a></div>
+    <div class="textheader">
+      <a href="/welcome/index"> Home /</a>
+      <a href="/users"> All Stutors /</a>
       <a href="/contact"> Contact </a>
-    </h1>
-  </div>
-  </header>
+   </div>
+</header>
 
 
 <%= yield %>
 
-
+<br>
 <footer>
     <a class="logofooter" href="/welcome/index"><%=image_tag("logo1.png")%></a>
-    <h1>
-      <a href="/welcome/index"> Home </a>
-      <a href="/users"> All Stutors </a>
+
+    <div class="textfooter">
+      <a href="/welcome/index"> Home /</a>
+      <a href="/users"> All Stutors /</a>
       <a href="/contact"> Contact </a>
-    </h1>
+  </div>
+
 </footer>
 </body>
 </html>
