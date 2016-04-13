@@ -1,13 +1,12 @@
-<h1>Welcome to Stutor</h1>
-<p>The place to find a student tutor<p>
-
-
+<%= stylesheet_link_tag    'welcome', media: 'all', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+<div class="bg-img"></div>
 <div>
 <center>
-<%= form_tag(users_path, :method => "get", id: "search-form") do %>
-<p>
-<%= text_field_tag :search, params[:search], placeholder: "Search City" %>
-<%= submit_tag "Search" ,:name => nil%>
+  <%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <p>
+  <%= text_field_tag :search, params[:search], placeholder: "Search City" %>
+  <%= submit_tag "Search" ,:name => nil%>
 </p>
 <% end %>
 </center>
