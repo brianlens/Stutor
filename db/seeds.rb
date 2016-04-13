@@ -15,12 +15,20 @@ User.create( {firs_name:" Wouter",last_name:"de Vos", username:"foxycoder", pass
 tutor_subjects = {}
 
 tutor_subjects["Jgreen"] = ["Math"]
+tutor_subjects["Jgreen"] = ["Physics"]
+tutor_subjects["e_sharpe"] = ["Math"]
+tutor_subjects["Brian_the_lion"] = ["Programming"]
+tutor_subjects["PresidentUSA"] = ["Economics"]
+tutor_subjects["foxycoder"] = ["Physics"]
+tutor_subjects["foxycoder"] = ["Programming"]
+tutor_subjects["english_wiz"] = ["English"]
+tutor_subjects["e_sharpe"] = ["Computer Science"]
 
 
 tutor_subjects.each do | user_name, subjects |
   user = User.find_by( username: user_name )
 
   subjects.each do |subject|
-    Subject.create( subject:subject, user_id: user.id)
+    Subject.create( name:subject, user_id: user.id)
   end
 end
