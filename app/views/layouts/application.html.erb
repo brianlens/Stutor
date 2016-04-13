@@ -8,22 +8,29 @@
 </head>
 <body>
 
-<header>
-    <center>
-    #ADDLINKS
-    <div class="headertext">Home / </div>
-    <div class="headertext">All Stutors / </div>
-    <div class="headertext">Contact </div>
-  </center>
+
+  <header>
+    <div class="logo"><a href="/welcome/index"><%=image_tag("logo1.png")%></a></div>
+    <div class="textheader">
+      <a href="/welcome/index"> Home /</a>
+      <a href="/users"> All Stutors /</a>
+      <a href="/contact"> Contact </a>
+   </div>
 </header>
+
 
 <%= yield %>
 
+<br>
+<footer>
+    <a class="logofooter" href="/welcome/index"><%=image_tag("logo1.png")%></a>
 
-<footer class="footer">
-    <div class="footertext">Home / </div>
-    <div class="footertext">All Stutors / </div>
-    <div class="footertext">Contact </div>
+    <div class="textfooter">
+      <a href="/welcome/index"> Home /</a>
+      <a href="/users"> All Stutors /</a>
+      <a href="/contact"> Contact </a>
+  </div>
+
 </footer>
 </body>
 </html>
