@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag  'application', 'contacts', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+
+<div class=s3Top></div>
+
+
+
+<div align="center">
+
+  <h2>Feel free to contact us at any time. Leave a comment or just hit one of these social buttons!</h2>
+
+  <ul class="share-buttons">
+          <li><a href="" title="Share on Facebook" target="_blank"><%= image_tag( 'Facebook.png' ) %></a></li>
+          <li><a href="www.twitter.com" target="_blank" title="Tweet"><%= image_tag( 'Twitter.png' ) %></a></li>
+          <li><a href="" target="_blank" title="Share on LinkedIn"><%= image_tag( 'LinkedIn.png' ) %></a></li>
+          <li><a href="mailto:" target="_blank" title="Email"><%= image_tag( 'Email.png' ) %></a></li>
+      </ul>
+
+
+<div id="form-main">
+    <div id="form-div">
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <p class="text">
+      <%= f.input :name, :required => true %>
+      </p>
+      <p class="email">
+      <%= f.input :email, :required => true %>
+      </p>
+      <p class="text">
+        <%= f.input :message, :as => :text, :required => true %>
+      </p>
+        <div class="submit">
+      <%= f.button :submit, 'Send message', :class=> 'button-blue' %>
+      <div class="ease"></div>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+
+</div>
