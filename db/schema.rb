@@ -11,24 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160414122244) do
+ActiveRecord::Schema.define(version: 20160414121905) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "contacts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "profiles", force: :cascade do |t|
     t.string   "name"
     t.string   "city"
     t.text     "description"
     t.integer  "price"
+    t.string   "image"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "image"
   end
 
   create_table "reservations", force: :cascade do |t|
@@ -37,45 +32,12 @@ ActiveRecord::Schema.define(version: 20160414122244) do
     t.string   "place"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "user_id"
-    t.integer  "subject_id"
   end
 
   create_table "subjects", force: :cascade do |t|
-    t.string   "subject"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "user_id"
-  end
-
-  create_table "tutors", force: :cascade do |t|
     t.string   "name"
-    t.string   "gpa"
-    t.string   "subject"
-    t.string   "postal_code"
-    t.string   "email"
-    t.string   "phone_number"
-    t.text     "images"
-    t.text     "description"
-    t.string   "social_links"
-    t.string   "price"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "firs_name"
-    t.string   "last_name"
-    t.string   "username"
-    t.string   "password"
-    t.string   "email"
-    t.string   "phone"
-    t.string   "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "reservations", "subjects"
-  add_foreign_key "reservations", "users"
-  add_foreign_key "subjects", "users"
 end
