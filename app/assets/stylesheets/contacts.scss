@@ -1,29 +1,23 @@
-// Place all the styles related to the contact controller here.
+// Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.formm{
+  padding: 50px;
+}
+
 .s3Top {
+  margin-top: 30px;
 	display: inline-block;
-	margin-top: 30px;
     width: 100%;
     height: 200px;
-    background-image: url(http://lotustutors.com/wp-content/uploads/2013/06/13877106_ml.jpg);
+    background-image: url(/assets/tact.jpg);
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 	border-radius: 5px;
 }
-
 .s3Top h1{
-	color: white;
-	padding: 20px;
-	font-family: sans-serif;
-	font-size: 70px;
-	text-align: center;
-}
-
-#bigBox{
-
-	text-align: center;
+	padding: 80px;
 }
 
 
@@ -35,14 +29,45 @@ ul.share-buttons{
 ul.share-buttons li{
   display: inline;
   padding-top: 15px;
-  padding: 3px;
+  padding: 10px;
+}
+
+/*flash*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
 }
 
 #form-main{
 	width:100%;
 	position: middle;
 	float:center;
-	padding-top:0px;
+	padding-top:10px;
+  margin-bottom: 30px;
 
 }
 
@@ -143,7 +168,7 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
-#button-blue{
+.button-blue{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
 	width: 100%;
@@ -161,7 +186,7 @@ input:focus, textarea:focus {
   font-weight:700;
 }
 
-#button-blue:hover{
+.button-blue:hover{
 	background-color: rgba(0,0,0,0);
 	color: #0493bd;
 }

@@ -7,9 +7,13 @@ Rails.application.routes.draw do
   resources :users
   resources :subjects
 
+
   get 'welcome/index'
 
-  get "contact/contact"
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
+
+
 
 
 
