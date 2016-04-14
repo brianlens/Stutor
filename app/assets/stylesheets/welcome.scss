@@ -1,20 +1,54 @@
-.bg-img {
-  width: 100%;
-  height: 100%;
-  background: image-url('http://www.webmarketingconnections.com/blog/wp-content/mythemes/2010/09/student-teacher.jpg') center center no-repeat;
-  background-size: cover;
+html {
+background-image: url(https://www.faithandleadership.com/sites/default/files/styles/article/public/field/image/college-classroom-2_tp.jpg?itok=LpBd3vhg);
+background-repeat: no-repeat;
+background-size: cover;
+// filter: blur(5px);
 
-  &:before {
-    content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-		opacity: .6;
-  }
 }
+
+
+
+.content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 40px auto;
+  background: rgba(22,22,22, 0.5);
+  width: 100%;
+  max-width: 960px;
+  border-radius: 5px;
+  padding-bottom: 32px;
+}
+
+.text {
+  width: 900px;
+  text-align: center;
+  font-size: 30px;
+  padding: 40px;
+  margin-left: 20px;
+}
+
+h1, h1 a {
+  min-height: 120px;
+  width: 90%;
+  max-width: 700px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 80px;
+}
+
+p {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+
 
 //
 // .wrap {

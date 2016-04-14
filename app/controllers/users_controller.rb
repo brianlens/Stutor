@@ -9,8 +9,6 @@ class UsersController < ApplicationController
       unless @users.count > 0
         @users = User.all.order('created_at DESC')
       end
-    else
-      @users = User.all.order('created_at DESC')
     end
   end
 
