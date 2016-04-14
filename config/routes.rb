@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  get 'subjects/index'
 
-  get 'subjects/show'
 
+  resources :profiles
   resources :reservations
   resources :users
   resources :subjects
@@ -12,10 +11,10 @@ Rails.application.routes.draw do
 
   match '/contacts', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
-
-
-
-
+  get 'profile/index'
+  get 'subjects/index'
+  get 'subjects/show'
+  get 'profiles/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
