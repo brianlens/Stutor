@@ -6,10 +6,16 @@
 <div class="content">
   <h1>Find your Stutor!</a></h1>
   <%= form_tag(users_path, :method => "get", id: "search-form") do %>
-  <p><%= text_field_tag  :search , params[:search], placeholder: "Search City" %>
-  <%= submit_tag "Search" ,:name => nil%></p>
+<p>
+  <%= text_field_tag  :search , params[:search], placeholder: "Search City" %>
+  <%= text_field_tag  :search , params[:search], placeholder: "Subject" %>
+  <%= submit_tag "Search" ,:name => nil%>
   <% end %>
+</p>
 </div>
 
-
-<%= image_tag( "Kwaliteit.png") %><%= image_tag( "Gemak.png" ) %>
+<div id= "images">
+  <div class= "kwaliteit">
+<%= image_tag( "Kwaliteit.png")%><%= image_tag( "Gemak.png" ) %>
+</div>
+</div>

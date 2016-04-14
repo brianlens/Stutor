@@ -31,11 +31,9 @@ header {
 footer {
   height: 110px;
   background: #1C5D6F;
-  display:inline-flex;
-  width: 100%;
+  display: flex;
   font-family: "Brandon Grotesque", sans-serif;
   color:white;
-  position:fixed;
 }
 
 .logo {
