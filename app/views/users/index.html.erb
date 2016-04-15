@@ -39,7 +39,7 @@ background-size:cover;
 
    <div class="cards">
    <% @users.each do |user| %>
-   <h2><a class="link" href="linktoprofile"><%= user.firs_name %> <%= user.last_name %></a></h2>
+   <h2><%= link_to user.firs_name, profile_path(user.profile) %> <%= user.last_name %></h2>
    <%= user.username %><br>
    <%= user.email %><br>
    <%= user.phone %><br>
