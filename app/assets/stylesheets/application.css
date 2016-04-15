@@ -34,6 +34,9 @@ footer {
   display:flex;
   font-family: "Brandon Grotesque", sans-serif;
   color:white;
+  position:fixed;
+  bottom:0;
+  width: 100%
 }
 
 .logo {
