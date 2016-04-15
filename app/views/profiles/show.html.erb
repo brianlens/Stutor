@@ -1,2 +1,38 @@
-<h1>Profiles#show</h1>
-<p>Find me in app/views/profiles/show.html.erb</p>
+<%= stylesheet_link_tag  'application', 'profiles', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<%= csrf_meta_tags %>
+
+
+<div class="profile">
+  <p>
+    <h1><Strong><%= @profile.name %></Strong></h1>
+  </p>
+  <p>
+    <strong>City:</strong>
+    <%= @profile.city %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= @profile.price.to_s %>
+  </p>
+  <p>
+    <strong>Description:</strong>
+  </p><p>
+    <%= @profile.description%>
+  </p>
+
+  <p>
+
+    <strong>Profile picture:</strong>
+    <div class="image">
+    <%= image_tag @profile.image %>
+  </div>
+
+</p>
+  </p>
+
+</div>
+
+</div>
