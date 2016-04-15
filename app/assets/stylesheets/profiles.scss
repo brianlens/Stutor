@@ -1,3 +1,24 @@
 // Place all the styles related to the Profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.name {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.profile {
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 50px;
+  padding-right: 650px;
+  padding-top: 10px;
+}
+.image {
+  padding-top: 10px;
+  
+}
+
+img {
+  width: 150px
+
+}
