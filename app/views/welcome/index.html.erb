@@ -7,9 +7,12 @@
   <h1>Find your Stutor!</a></h1>
   <%= form_tag(users_path, :method => "get", id: "search-form") do %>
 <p>
-  <%= text_field_tag  :search , params[:search], placeholder: "Search City" %>
+  <%= text_field_tag  :search , params[:search], placeholder: "City" %>
+<p>
   <%= text_field_tag  :search , params[:search], placeholder: "Subject" %>
-  <%= submit_tag "Search" ,:name => nil%>
+</p>
+</p>
+  <%= submit_tag "Search" ,:name => nil, :class => "btn btn-primary btn-lg" %>
   <% end %>
 </p>
 </div>
