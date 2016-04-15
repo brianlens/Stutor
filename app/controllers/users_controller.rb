@@ -10,7 +10,8 @@ class UsersController < ApplicationController
         @users = User.all.order('created_at DESC')
       end
     else
-      @users = User.all.order('created_at DESC')
+      #only shows users with subjects (ie. tutors)
+      @users = User.joins(:subjects).all
     end
   end
 
