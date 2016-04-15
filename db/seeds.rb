@@ -35,3 +35,18 @@ tutor_subjects.each do | user_name, subjects |
     Subject.create!( name:subject, user_id: user.id)
   end
 end
+
+profiles = {}
+
+profiles["Jgreen"] = ["I've been working as a teacher for almost 15 years. I'm specialized in history but also for math problems I can most likely help you with a lot. I am mostly available in the evening.",
+   30, "https://pbs.twimg.com/profile_images/559752051819692032/aSogDYZe.jpeg"]
+
+
+profiles.each do |user_name, info|
+  tutor = User.find_by(username: user_name)
+
+
+  info.each do |description, price, image|
+    Profile.create(name: tutor.firs_name, city: tutor.city, description: description, price: price, image: image, user_id: tutor.id)
+  end
+end
