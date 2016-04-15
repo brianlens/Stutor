@@ -1,20 +1,54 @@
-
 <html>
-<body>
+<head>
+<style>
+.pagetitle {
+  font-family: "Brandon Grotesque"
+  padding:5px;
+  margin-top:60px;
+  font-size: 75px;
+  color:white;
+  opacity:0.8;
+}
+
+.cards {
+  padding:30px;
+  border-radius: 10px;
+  background:#ededed;
+  width:225px;
+  opacity:0.8;
+  position:sticky;
+
+}
+
+.link{
+  color:black;
+}
+
+html {
+background-image: url(http://res.cloudinary.com/codaisseur/image/upload/v1460724006/2_c1jwob.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+
+}
+
+</style>
+</head>
 <center>
-
-<p id="notice"><%= notice %></p>
-
-<h1>Here you can find all our Stutors!</h1>
+<div class="pagetitle">HERE YOU CAN FIND ALL OUR <i>STUTORS</i></div>
 <br>
 
+   <div class="cards">
+   <% @users.each do |user| %>
+   <h2><a class="link" href="linktoprofile"><%= user.firs_name %> <%= user.last_name %></a></h2>
+   <%= user.username %><br>
+   <%= user.email %><br>
+   <%= user.phone %><br>
+   <%= user.city %><br>
+   - - - - - - - - - - - - - - - - - - - -
+   <% end %></div>
+   <br>
 
 
-
-
-
-
-<%= yield %>
 </center>
 </body>
 </html>
