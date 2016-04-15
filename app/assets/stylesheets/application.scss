@@ -1,0 +1,104 @@
+header {
+   height: 135px;
+   background: #e63d02;
+   display:inline-flex;;
+   width: 100%;
+   text-align: center;
+   position: relative;
+
+}
+
+.textheader {
+   display: inline-block;
+   font-size:40px;
+   font-family: "Brandon Grotesque", sans-serif;
+   flex: 1;
+   text-align: center;
+   margin-right:90px;
+   margin-top:40px;
+
+  a:link, a:hover, a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Brandon Grotesque", sans-serif;
+  }
+
+}
+
+.Singupheader {
+  display: inline-block;;
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: "Brandon Grotesque", sans-serif;
+  flex: 1;
+  text-align: right;
+  right:inherit;
+  border-left: 120px;
+  position: absolute;
+
+}
+
+.textfooter {
+ display: inline-block;;
+ font-size:20px;
+ color: #FFFFFF;
+ font-family: "Brandon Grotesque", sans-serif;
+ flex: 1;
+ text-align:right;
+ margin-right:50px;
+ margin-top:35px;
+ a:link, a:hover, a:visited {
+   color: #fff;
+   text-decoration: none;
+   font-family: "Brandon Grotesque", sans-serif;
+ }
+}
+
+footer {
+  height: 110px;
+  background: #1C5D6F;
+  display:flex;
+  font-family: "Brandon Grotesque", sans-serif;
+  color:white;
+  position:fixed;
+  bottom:0;
+  width: 100%
+}
+
+.logo {
+  position:relative;
+  left:50px;
+  padding-top:10px;
+}
+
+.logofooter {
+  position:relative;
+  left:50px;
+}
+
+body {
+  margin: 0;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction:column;
+  min-height: 10vh;
+}
+
+section.content {
+  flex: 1;
+  font-family: "Brandon Grotesque", sans-serif;
+  text-align: center;
+}
+
+.headercontent {
+  left:30%auto;
+
+}
+element {
+    color: white;
+    text-decoration: none;
+    font-family: "Brandon Grotesque", sans-serif;
+}
