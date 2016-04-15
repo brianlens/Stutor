@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
 
 
+  get 'profiles/index'
+
+  get 'profiles/show'
+
+  get 'profiles/edit'
+
+  get 'profiles/destroy'
+
   devise_for :users
   resources :profiles
   resources :reservations
