@@ -1,20 +1,33 @@
 <%= stylesheet_link_tag  'application', 'contacts', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
+<style>
 
-<div class=s3Top></div>
+html {
+  background-image: url(http://res.cloudinary.com/codaisseur/image/upload/v1460730520/Stutor_esrslw.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.titletext{
+  font-size: 35px;
+  padding: 50px;
+  background-color:rgba(72,72,72,0.4);
+  color:white;
+  opacity:0.8;
+  width:100%
+}
 
-
+</style>
 
 <div align="center">
 
-  <h2>Feel free to contact us at any time. Leave a comment or just hit one of these social buttons!</h2>
+  <div class = "titletext">FEEL FREE TO CONTACT US AT ANY TIME, WE'LL GET BACK TO YOU ASAP!</div>
 
   <ul class="share-buttons">
           <li><a href="" title="Share on Facebook" target="_blank"><%= image_tag( 'Facebook.png' ) %></a></li>
           <li><a href="www.twitter.com" target="_blank" title="Tweet"><%= image_tag( 'Twitter.png' ) %></a></li>
           <li><a href="" target="_blank" title="Share on LinkedIn"><%= image_tag( 'LinkedIn.png' ) %></a></li>
-          <li><a href="mailto:" target="_blank" title="Email"><%= image_tag( 'Email.png' ) %></a></li>
+          <li><a href="mailto:brian@stutor.nl" target="brian@stutor.nl" title="Email"><%= image_tag( 'Email.png' ) %></a></li>
       </ul>
 
 
@@ -23,10 +36,10 @@
       <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
       <p class="text">
       <%= f.input :name, :required => true %>
-      </p>
+    </p>
       <p class="email">
       <%= f.input :email, :required => true %>
-      </p>
+    </p>
       <p class="text">
         <%= f.input :message, :as => :text, :required => true %>
       </p>
@@ -37,6 +50,8 @@
   <% end %>
   </div>
 </div>
+<br>
+<br>
 
 
 </div>

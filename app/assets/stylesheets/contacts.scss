@@ -68,6 +68,8 @@ text-align: left;
 	float:center;
 	padding-top:10px;
   margin-bottom: 30px;
+  color:white;
+  font-size:15px;
 
 }
 
@@ -174,7 +176,7 @@ input:focus, textarea:focus {
 	width: 100%;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
-	background-color: #3498db;
+	background-color: #e63d02;
 	color:white;
 	font-size:24px;
 	padding-top:22px;
@@ -188,11 +190,11 @@ input:focus, textarea:focus {
 
 .button-blue:hover{
 	background-color: rgba(0,0,0,0);
-	color: #0493bd;
+	color: #e63d02;
 }
 
 .submit:hover {
-	color: #3498db;
+	color: #e63d02;
 }
 
 .ease {
