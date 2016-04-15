@@ -11,9 +11,13 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :profiles
-  resources :reservations
+
   resources :users
-  resources :subjects
+  resources :subjects do
+    resources :reservations
+
+  end
+
 
 
   get 'welcome/index'

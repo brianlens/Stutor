@@ -32,7 +32,10 @@
 
 </p>
   </p>
-
+<br>
+<% @profile.user.subjects.each do |subject| %>
+  <%= link_to subject.name + 'Make an Appointment!', new_subject_reservation_path(subject) %>
+<%end%>
 </div>
 
 </div>

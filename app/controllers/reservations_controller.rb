@@ -14,6 +14,7 @@ class ReservationsController < ApplicationController
 
   # GET /reservations/new
   def new
+    @subject = Subject.find(params[:subject_id])
     @reservation = Reservation.new
   end
 
@@ -26,12 +27,12 @@ class ReservationsController < ApplicationController
   def create
     @student = current_user
     @subject = Subject.find(params[:subject_id])
-    @reservation = Reservation.create(datetime: params[:datetime], user: @student, subject: @subject)
+    @reservation = Reservation.create(datetime: DateTime.parse(reservation_params[:datetime]), student: @student, subject: @subject)
 
 
     respond_to do |format|
       if @reservation.save
-        format.html { redirect_to @reservation, notice: 'Reservation was successfully created.' }
+        format.html { redirect_to [@subject,@reservation], notice: 'Reservation was successfully created.' }
         format.json { render :show, status: :created, location: @reservation }
       else
         format.html { render :new }
@@ -45,7 +46,7 @@ class ReservationsController < ApplicationController
   def update
     respond_to do |format|
       if @reservation.update(reservation_params)
-        format.html { redirect_to @reservation, notice: 'Reservation was successfully updated.' }
+        format.html { redirect_to [@subject, @reservation], notice: 'Reservation was successfully updated.' }
         format.json { render :show, status: :ok, location: @reservation }
       else
         format.html { render :edit }
@@ -72,6 +73,6 @@ class ReservationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reservation_params
-      params.require(:reservation).permit(:date, :time, :place)
+      params.require(:reservation).permit(:place, :datetime)
     end
 end
